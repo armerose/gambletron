@@ -1,0 +1,199 @@
+trading:
+  # Currency pairs to trade (use =X suffix for Yahoo Finance forex)
+  pairs:
+    - EURUSD=X
+    - GBPUSD=X
+    - USDJPY=X
+    - AUDUSD=X
+    - NZDUSD=X
+  
+  # Timeframes for analysis
+  timeframes:
+    - 1h
+    - 4h
+    - 1d
+  
+  # Trading hours (UTC)
+  trading_hours:
+    start: "00:00"
+    end: "23:59"
+
+models:
+  # Deep Learning Models
+  lstm:
+    enabled: true
+    lookback_periods: 60
+    hidden_units: 128
+    layers: 3
+    dropout: 0.3
+    
+  transformer:
+    enabled: true
+    n_heads: 8
+    n_layers: 4
+    d_model: 256
+    lookback_periods: 60
+  
+  # Gradient Boosting
+  xgboost:
+    enabled: true
+    n_estimators: 100
+    max_depth: 7
+    learning_rate: 0.1
+  
+  # Reinforcement Learning
+  rl_agent:
+    enabled: true
+    type: "ppo"  # ppo or a3c
+    training_steps: 100000
+    
+  # Ensemble voting
+  ensemble:
+    voting_method: "weighted_average"  # or "majority"
+    weights:
+      lstm: 0.30
+      transformer: 0.30
+      xgboost: 0.25
+      rl_agent: 0.15
+
+strategies:
+  # Mean Reversion
+  mean_reversion:
+    enabled: true
+    window: 20
+    std_threshold: 2.0
+    min_confidence: 0.65
+  
+  # Trend Following
+  trend_following:
+    enabled: true
+    ma_short: 12
+    ma_long: 26
+    min_slope_threshold: 0.005
+    min_confidence: 0.60
+  
+  # Statistical Arbitrage
+  statistical_arbitrage:
+    enabled: true
+    pairs_correlation_threshold: 0.7
+    spread_std_threshold: 1.5
+  
+  # Market Regime Detection
+  regime_detection:
+    enabled: true
+    hmm_states: 3  # low vol, normal, high vol
+    
+  # Ensemble strategy
+  ensemble:
+    enabled: true
+    voting_method: "weighted"
+    strategy_weights:
+      mean_reversion: 0.35
+      trend_following: 0.35
+      statistical_arbitrage: 0.20
+      rl_optimized: 0.10
+
+risk_management:
+  # Position sizing
+  position_sizing:
+    method: "kelly_criterion"  # or "volatility_based"
+    kelly_fraction: 0.25  # Never use full Kelly
+    max_position_percent: 5.0
+    
+  # Stop Loss and Take Profit
+  stops:
+    stop_loss_pips: 50
+    take_profit_pips: 100
+    trailing_stop: true
+    trailing_stop_pips: 30
+    
+  # Drawdown limits
+  drawdown_limits:
+    max_daily_drawdown: 0.05
+    max_monthly_drawdown: 0.20
+    circuit_breaker_enabled: true
+    
+  # Correlation management
+  correlation_management:
+    max_correlated_pairs: 2
+    correlation_threshold: 0.7
+
+backtesting:
+  # Date range
+  start_date: "2020-01-01"
+  end_date: "2024-12-31"
+  
+  # Train/test split
+  train_ratio: 0.70
+  validation_ratio: 0.15
+  test_ratio: 0.15
+  
+  # Simulation
+  initial_capital: 100000
+  commission: 0.0002  # 0.02%
+  slippage_pips: 1.0
+  
+  # Optimization
+  optimization:
+    method: "bayesian"  # or "grid"
+    n_trials: 100
+    n_jobs: -1  # parallel jobs
+    
+  # Analysis
+  analysis:
+    calculate_drawdown: true
+    calculate_sharpe: true
+    calculate_sortino: true
+    calculate_var: true
+
+live_trading:
+  # Execution
+  execution:
+    order_type: "market"  # market or limit
+    time_in_force: "IOC"  # IOC, GTD, GTC
+    max_slippage_percent: 0.1
+    
+  # Monitoring
+  monitoring:
+    check_interval_seconds: 60
+    alert_on_drawdown: true
+    alert_threshold_percent: 5
+    
+  # Logging
+  logging:
+    log_all_trades: true
+    log_signals: true
+    log_performance: true
+
+data:
+  # Data sources
+  sources:
+    primary: "oanda"
+    backup: "ccxt"
+    
+  # Caching
+  caching:
+    enabled: true
+    ttl_hours: 24
+    cache_backend: "redis"
+    
+  # Feature engineering
+  features:
+    technical_indicators:
+      - rsi
+      - macd
+      - bollinger_bands
+      - atr
+      - ema
+      - sma
+    
+    market_microstructure:
+      - bid_ask_spread
+      - volume_profile
+      - order_imbalance
+
+performance_targets:
+  min_sharpe_ratio: 1.5
+  target_annual_return: 0.25  # 25%
+  max_drawdown_tolerance: 0.15  # 15%
+  target_win_rate: 0.55  # 55%
