@@ -1,0 +1,645 @@
+
+============================================================
+GAMBLETRON STRATEGY VALIDATION SUITE
+============================================================
+Testing period: 2022-01-01 to 2025-02-01
+Symbols: SPY, QQQ, IWM
+============================================================
+Fetching SPY from 2022-01-01 to 2025-02-01...
+
+============================================================
+Testing Adaptive Strategy (SPY)
+============================================================
+Data points: 773
+Date range: 2022-01-03 to 2025-01-31
+
+╔════════════════════════════════════════════════════════════════╗
+║                    BACKTEST REPORT                             ║
+╠════════════════════════════════════════════════════════════════╣
+║ TRADE STATISTICS
+║  Total Trades:        3
+║  Winning Trades:      2 (66.7%)
+║  Losing Trades:       1
+║  Max Consecutive Losses: 1
+║  Profit Factor:       4.58x
+║
+║ PERFORMANCE METRICS
+║  Total Return:        0.60%
+║  Annual Return:       0.21%
+║  Monthly Avg Return:  0.00%
+║  Sharpe Ratio:        0.771
+║  Sortino Ratio:       0.951
+║  Calmar Ratio:        0.602
+║
+║ RISK METRICS  
+║  Max Drawdown:        -0.35%
+║  Drawdown Duration:   0 bars
+║
+║ CAPITAL FLOW
+║  Starting Capital:    $100,000
+║  Ending Capital:      $100,602
+║  Max Capital:         $100,642
+║
+║ TRADE METRICS
+║  Avg Trade Duration:  190 bars
+║  Avg Winner Size:     $389
+║  Avg Win:             19.68%
+║  Avg Loss:            -8.59%
+║  Gross Profit:        $787
+║  Gross Loss:          $172
+║  Net Profit:          $602
+╚════════════════════════════════════════════════════════════════╝
+
+
+============================================================
+Testing Mean Reversion (SPY)
+============================================================
+Data points: 773
+Date range: 2022-01-03 to 2025-01-31
+
+╔════════════════════════════════════════════════════════════════╗
+║                    BACKTEST REPORT                             ║
+╠════════════════════════════════════════════════════════════════╣
+║ TRADE STATISTICS
+║  Total Trades:        2
+║  Winning Trades:      2 (100.0%)
+║  Losing Trades:       0
+║  Max Consecutive Losses: 0
+║  Profit Factor:       0.00x
+║
+║ PERFORMANCE METRICS
+║  Total Return:        0.37%
+║  Annual Return:       0.13%
+║  Monthly Avg Return:  0.00%
+║  Sharpe Ratio:        0.547
+║  Sortino Ratio:       0.481
+║  Calmar Ratio:        0.324
+║
+║ RISK METRICS  
+║  Max Drawdown:        -0.39%
+║  Drawdown Duration:   0 bars
+║
+║ CAPITAL FLOW
+║  Starting Capital:    $100,000
+║  Ending Capital:      $100,365
+║  Max Capital:         $100,365
+║
+║ TRADE METRICS
+║  Avg Trade Duration:  100 bars
+║  Avg Winner Size:     $183
+║  Avg Win:             9.33%
+║  Avg Loss:            0.00%
+║  Gross Profit:        $374
+║  Gross Loss:          $0
+║  Net Profit:          $365
+╚════════════════════════════════════════════════════════════════╝
+
+
+============================================================
+Testing Trend Following (SPY)
+============================================================
+Data points: 773
+Date range: 2022-01-03 to 2025-01-31
+
+╔════════════════════════════════════════════════════════════════╗
+║                    BACKTEST REPORT                             ║
+╠════════════════════════════════════════════════════════════════╣
+║ TRADE STATISTICS
+║  Total Trades:        6
+║  Winning Trades:      2 (33.3%)
+║  Losing Trades:       4
+║  Max Consecutive Losses: 4
+║  Profit Factor:       0.87x
+║
+║ PERFORMANCE METRICS
+║  Total Return:        -0.09%
+║  Annual Return:       -0.03%
+║  Monthly Avg Return:  0.00%
+║  Sharpe Ratio:        -0.133
+║  Sortino Ratio:       -0.115
+║  Calmar Ratio:        -0.053
+║
+║ RISK METRICS  
+║  Max Drawdown:        -0.53%
+║  Drawdown Duration:   0 bars
+║
+║ CAPITAL FLOW
+║  Starting Capital:    $100,000
+║  Ending Capital:      $99,914
+║  Max Capital:         $100,024
+║
+║ TRADE METRICS
+║  Avg Trade Duration:  55 bars
+║  Avg Winner Size:     $208
+║  Avg Win:             10.65%
+║  Avg Loss:            -6.10%
+║  Gross Profit:        $425
+║  Gross Loss:          $487
+║  Net Profit:          $-86
+╚════════════════════════════════════════════════════════════════╝
+
+
+============================================================
+Walk-Forward Analysis: Adaptive (SPY)
+============================================================
+
+Period 1: 2023-01-04 to 2023-04-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 2: 2023-02-03 to 2023-05-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 3: 2023-03-07 to 2023-06-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 4: 2023-04-05 to 2023-07-06
+  Return: -0.01% | Sharpe: -0.36 | Win Rate: 0.0%
+
+Period 5: 2023-05-05 to 2023-08-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 6: 2023-06-06 to 2023-09-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 7: 2023-07-07 to 2023-10-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 8: 2023-08-07 to 2023-11-02
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 9: 2023-09-06 to 2023-12-04
+  Return: -0.02% | Sharpe: -2.58 | Win Rate: 0.0%
+
+Period 10: 2023-10-05 to 2024-01-04
+  Return: -0.02% | Sharpe: -0.68 | Win Rate: 0.0%
+
+Period 11: 2023-11-03 to 2024-02-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 12: 2023-12-05 to 2024-03-06
+  Return: 0.00% | Sharpe: 0.62 | Win Rate: 100.0%
+
+Period 13: 2024-01-05 to 2024-04-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 14: 2024-02-06 to 2024-05-06
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 15: 2024-03-07 to 2024-06-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 16: 2024-04-08 to 2024-07-08
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 17: 2024-05-07 to 2024-08-06
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 18: 2024-06-06 to 2024-09-05
+  Return: -0.05% | Sharpe: -2.96 | Win Rate: 0.0%
+
+Period 19: 2024-07-09 to 2024-10-04
+  Return: 0.01% | Sharpe: 1.00 | Win Rate: 100.0%
+
+Period 20: 2024-08-07 to 2024-11-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 21: 2024-09-06 to 2024-12-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 22: 2024-10-07 to 2025-01-06
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+────────────────────────────────────────────────────────────
+Walk-Forward Summary:
+  Total Periods: 22
+  Profitable Periods: 2/22
+  Avg Return: -0.00%
+  Avg Sharpe: -0.23
+  Avg Win Rate: 9.1%
+────────────────────────────────────────────────────────────
+Fetching QQQ from 2022-01-01 to 2025-02-01...
+
+============================================================
+Testing Adaptive Strategy (QQQ)
+============================================================
+Data points: 773
+Date range: 2022-01-03 to 2025-01-31
+
+╔════════════════════════════════════════════════════════════════╗
+║                    BACKTEST REPORT                             ║
+╠════════════════════════════════════════════════════════════════╣
+║ TRADE STATISTICS
+║  Total Trades:        6
+║  Winning Trades:      3 (50.0%)
+║  Losing Trades:       3
+║  Max Consecutive Losses: 3
+║  Profit Factor:       1.21x
+║
+║ PERFORMANCE METRICS
+║  Total Return:        0.10%
+║  Annual Return:       0.04%
+║  Monthly Avg Return:  0.00%
+║  Sharpe Ratio:        0.099
+║  Sortino Ratio:       0.119
+║  Calmar Ratio:        0.052
+║
+║ RISK METRICS  
+║  Max Drawdown:        -0.68%
+║  Drawdown Duration:   0 bars
+║
+║ CAPITAL FLOW
+║  Starting Capital:    $100,000
+║  Ending Capital:      $100,097
+║  Max Capital:         $100,166
+║
+║ TRADE METRICS
+║  Avg Trade Duration:  89 bars
+║  Avg Winner Size:     $233
+║  Avg Win:             11.91%
+║  Avg Loss:            -9.86%
+║  Gross Profit:        $712
+║  Gross Loss:          $591
+║  Net Profit:          $97
+╚════════════════════════════════════════════════════════════════╝
+
+
+============================================================
+Testing Mean Reversion (QQQ)
+============================================================
+Data points: 773
+Date range: 2022-01-03 to 2025-01-31
+
+╔════════════════════════════════════════════════════════════════╗
+║                    BACKTEST REPORT                             ║
+╠════════════════════════════════════════════════════════════════╣
+║ TRADE STATISTICS
+║  Total Trades:        3
+║  Winning Trades:      3 (100.0%)
+║  Losing Trades:       0
+║  Max Consecutive Losses: 0
+║  Profit Factor:       0.00x
+║
+║ PERFORMANCE METRICS
+║  Total Return:        0.78%
+║  Annual Return:       0.27%
+║  Monthly Avg Return:  0.00%
+║  Sharpe Ratio:        1.592
+║  Sortino Ratio:       1.018
+║  Calmar Ratio:        1.738
+║
+║ RISK METRICS  
+║  Max Drawdown:        -0.15%
+║  Drawdown Duration:   0 bars
+║
+║ CAPITAL FLOW
+║  Starting Capital:    $100,000
+║  Ending Capital:      $100,779
+║  Max Capital:         $100,779
+║
+║ TRADE METRICS
+║  Avg Trade Duration:  49 bars
+║  Avg Winner Size:     $260
+║  Avg Win:             13.16%
+║  Avg Loss:            0.00%
+║  Gross Profit:        $792
+║  Gross Loss:          $0
+║  Net Profit:          $779
+╚════════════════════════════════════════════════════════════════╝
+
+
+============================================================
+Testing Trend Following (QQQ)
+============================================================
+Data points: 773
+Date range: 2022-01-03 to 2025-01-31
+
+╔════════════════════════════════════════════════════════════════╗
+║                    BACKTEST REPORT                             ║
+╠════════════════════════════════════════════════════════════════╣
+║ TRADE STATISTICS
+║  Total Trades:        6
+║  Winning Trades:      3 (50.0%)
+║  Losing Trades:       3
+║  Max Consecutive Losses: 3
+║  Profit Factor:       2.44x
+║
+║ PERFORMANCE METRICS
+║  Total Return:        0.57%
+║  Annual Return:       0.20%
+║  Monthly Avg Return:  0.00%
+║  Sharpe Ratio:        0.559
+║  Sortino Ratio:       0.666
+║  Calmar Ratio:        0.368
+║
+║ RISK METRICS  
+║  Max Drawdown:        -0.54%
+║  Drawdown Duration:   0 bars
+║
+║ CAPITAL FLOW
+║  Starting Capital:    $100,000
+║  Ending Capital:      $100,566
+║  Max Capital:         $100,637
+║
+║ TRADE METRICS
+║  Avg Trade Duration:  85 bars
+║  Avg Winner Size:     $329
+║  Avg Win:             16.67%
+║  Avg Loss:            -6.83%
+║  Gross Profit:        $1,000
+║  Gross Loss:          $409
+║  Net Profit:          $566
+╚════════════════════════════════════════════════════════════════╝
+
+
+============================================================
+Walk-Forward Analysis: Adaptive (QQQ)
+============================================================
+
+Period 1: 2023-01-04 to 2023-04-04
+  Return: -0.00% | Sharpe: -2.42 | Win Rate: 0.0%
+
+Period 2: 2023-02-03 to 2023-05-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 3: 2023-03-07 to 2023-06-05
+  Return: 0.03% | Sharpe: 2.85 | Win Rate: 100.0%
+
+Period 4: 2023-04-05 to 2023-07-06
+  Return: -0.02% | Sharpe: -0.45 | Win Rate: 0.0%
+
+Period 5: 2023-05-05 to 2023-08-04
+  Return: -0.08% | Sharpe: -2.30 | Win Rate: 0.0%
+
+Period 6: 2023-06-06 to 2023-09-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 7: 2023-07-07 to 2023-10-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 8: 2023-08-07 to 2023-11-02
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 9: 2023-09-06 to 2023-12-04
+  Return: 0.00% | Sharpe: 0.30 | Win Rate: 100.0%
+
+Period 10: 2023-10-05 to 2024-01-04
+  Return: -0.03% | Sharpe: -1.20 | Win Rate: 0.0%
+
+Period 11: 2023-11-03 to 2024-02-05
+  Return: 0.03% | Sharpe: 1.25 | Win Rate: 100.0%
+
+Period 12: 2023-12-05 to 2024-03-06
+  Return: 0.01% | Sharpe: 0.55 | Win Rate: 100.0%
+
+Period 13: 2024-01-05 to 2024-04-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 14: 2024-02-06 to 2024-05-06
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 15: 2024-03-07 to 2024-06-05
+  Return: -0.00% | Sharpe: -2.42 | Win Rate: 0.0%
+
+Period 16: 2024-04-08 to 2024-07-08
+  Return: 0.05% | Sharpe: 2.46 | Win Rate: 100.0%
+
+Period 17: 2024-05-07 to 2024-08-06
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 18: 2024-06-06 to 2024-09-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 19: 2024-07-09 to 2024-10-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 20: 2024-08-07 to 2024-11-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 21: 2024-09-06 to 2024-12-04
+  Return: -0.00% | Sharpe: -2.42 | Win Rate: 0.0%
+
+Period 22: 2024-10-07 to 2025-01-06
+  Return: -0.05% | Sharpe: -1.17 | Win Rate: 0.0%
+
+────────────────────────────────────────────────────────────
+Walk-Forward Summary:
+  Total Periods: 22
+  Profitable Periods: 5/22
+  Avg Return: -0.00%
+  Avg Sharpe: -0.23
+  Avg Win Rate: 22.7%
+────────────────────────────────────────────────────────────
+Fetching IWM from 2022-01-01 to 2025-02-01...
+
+============================================================
+Testing Adaptive Strategy (IWM)
+============================================================
+Data points: 773
+Date range: 2022-01-03 to 2025-01-31
+
+╔════════════════════════════════════════════════════════════════╗
+║                    BACKTEST REPORT                             ║
+╠════════════════════════════════════════════════════════════════╣
+║ TRADE STATISTICS
+║  Total Trades:        7
+║  Winning Trades:      2 (28.6%)
+║  Losing Trades:       5
+║  Max Consecutive Losses: 5
+║  Profit Factor:       0.16x
+║
+║ PERFORMANCE METRICS
+║  Total Return:        -0.75%
+║  Annual Return:       -0.26%
+║  Monthly Avg Return:  0.00%
+║  Sharpe Ratio:        -0.796
+║  Sortino Ratio:       -0.924
+║  Calmar Ratio:        -0.289
+║
+║ RISK METRICS  
+║  Max Drawdown:        -0.90%
+║  Drawdown Duration:   0 bars
+║
+║ CAPITAL FLOW
+║  Starting Capital:    $100,000
+║  Ending Capital:      $99,247
+║  Max Capital:         $100,000
+║
+║ TRADE METRICS
+║  Avg Trade Duration:  59 bars
+║  Avg Winner Size:     $67
+║  Avg Win:             3.59%
+║  Avg Loss:            -8.71%
+║  Gross Profit:        $142
+║  Gross Loss:          $868
+║  Net Profit:          $-753
+╚════════════════════════════════════════════════════════════════╝
+
+
+============================================================
+Testing Mean Reversion (IWM)
+============================================================
+Data points: 773
+Date range: 2022-01-03 to 2025-01-31
+
+╔════════════════════════════════════════════════════════════════╗
+║                    BACKTEST REPORT                             ║
+╠════════════════════════════════════════════════════════════════╣
+║ TRADE STATISTICS
+║  Total Trades:        5
+║  Winning Trades:      5 (100.0%)
+║  Losing Trades:       0
+║  Max Consecutive Losses: 0
+║  Profit Factor:       0.00x
+║
+║ PERFORMANCE METRICS
+║  Total Return:        1.34%
+║  Annual Return:       0.46%
+║  Monthly Avg Return:  0.00%
+║  Sharpe Ratio:        1.546
+║  Sortino Ratio:       1.852
+║  Calmar Ratio:        2.296
+║
+║ RISK METRICS  
+║  Max Drawdown:        -0.20%
+║  Drawdown Duration:   0 bars
+║
+║ CAPITAL FLOW
+║  Starting Capital:    $100,000
+║  Ending Capital:      $101,338
+║  Max Capital:         $101,338
+║
+║ TRADE METRICS
+║  Avg Trade Duration:  60 bars
+║  Avg Winner Size:     $268
+║  Avg Win:             13.52%
+║  Avg Loss:            0.00%
+║  Gross Profit:        $1,359
+║  Gross Loss:          $0
+║  Net Profit:          $1,338
+╚════════════════════════════════════════════════════════════════╝
+
+
+============================================================
+Testing Trend Following (IWM)
+============================================================
+Data points: 773
+Date range: 2022-01-03 to 2025-01-31
+
+╔════════════════════════════════════════════════════════════════╗
+║                    BACKTEST REPORT                             ║
+╠════════════════════════════════════════════════════════════════╣
+║ TRADE STATISTICS
+║  Total Trades:        7
+║  Winning Trades:      2 (28.6%)
+║  Losing Trades:       5
+║  Max Consecutive Losses: 5
+║  Profit Factor:       0.44x
+║
+║ PERFORMANCE METRICS
+║  Total Return:        -0.33%
+║  Annual Return:       -0.11%
+║  Monthly Avg Return:  0.00%
+║  Sharpe Ratio:        -0.347
+║  Sortino Ratio:       -0.395
+║  Calmar Ratio:        -0.172
+║
+║ RISK METRICS  
+║  Max Drawdown:        -0.67%
+║  Drawdown Duration:   0 bars
+║
+║ CAPITAL FLOW
+║  Starting Capital:    $100,000
+║  Ending Capital:      $99,666
+║  Max Capital:         $100,066
+║
+║ TRADE METRICS
+║  Avg Trade Duration:  56 bars
+║  Avg Winner Size:     $116
+║  Avg Win:             6.06%
+║  Avg Loss:            -5.49%
+║  Gross Profit:        $241
+║  Gross Loss:          $548
+║  Net Profit:          $-334
+╚════════════════════════════════════════════════════════════════╝
+
+
+============================================================
+Walk-Forward Analysis: Adaptive (IWM)
+============================================================
+
+Period 1: 2023-01-04 to 2023-04-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 2: 2023-02-03 to 2023-05-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 3: 2023-03-07 to 2023-06-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 4: 2023-04-05 to 2023-07-06
+  Return: -0.05% | Sharpe: -1.84 | Win Rate: 0.0%
+
+Period 5: 2023-05-05 to 2023-08-04
+  Return: -0.02% | Sharpe: -0.78 | Win Rate: 0.0%
+
+Period 6: 2023-06-06 to 2023-09-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 7: 2023-07-07 to 2023-10-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 8: 2023-08-07 to 2023-11-02
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 9: 2023-09-06 to 2023-12-04
+  Return: 0.02% | Sharpe: 2.34 | Win Rate: 100.0%
+
+Period 10: 2023-10-05 to 2024-01-04
+  Return: -0.05% | Sharpe: -1.03 | Win Rate: 0.0%
+
+Period 11: 2023-11-03 to 2024-02-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 12: 2023-12-05 to 2024-03-06
+  Return: -0.01% | Sharpe: -0.68 | Win Rate: 0.0%
+
+Period 13: 2024-01-05 to 2024-04-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 14: 2024-02-06 to 2024-05-06
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 15: 2024-03-07 to 2024-06-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 16: 2024-04-08 to 2024-07-08
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 17: 2024-05-07 to 2024-08-06
+  Return: -0.13% | Sharpe: -2.16 | Win Rate: 0.0%
+
+Period 18: 2024-06-06 to 2024-09-05
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 19: 2024-07-09 to 2024-10-04
+  Return: -0.04% | Sharpe: -1.61 | Win Rate: 0.0%
+
+Period 20: 2024-08-07 to 2024-11-04
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+Period 21: 2024-09-06 to 2024-12-04
+  Return: 0.07% | Sharpe: 2.62 | Win Rate: 100.0%
+
+Period 22: 2024-10-07 to 2025-01-06
+  Return: 0.00% | Sharpe: 0.00 | Win Rate: 0.0%
+
+────────────────────────────────────────────────────────────
+Walk-Forward Summary:
+  Total Periods: 22
+  Profitable Periods: 2/22
+  Avg Return: -0.01%
+  Avg Sharpe: -0.14
+  Avg Win Rate: 9.1%
+────────────────────────────────────────────────────────────
+
+✓ Results saved to backtest_results.json

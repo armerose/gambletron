@@ -35,7 +35,7 @@ export default function MetricCard({
           <h3 className="text-3xl font-bold text-surface-900 dark:text-white">{value}</h3>
         </div>
         {icon && (
-          <div className="w-12 h-12 bg-primary-50 dark:bg-primary-900/20 rounded-lg flex items-center justify-center">
+          <div className="w-12 h-12 bg-brand-50 dark:bg-brand-900/20 rounded-lg flex items-center justify-center">
             {icon}
           </div>
         )}

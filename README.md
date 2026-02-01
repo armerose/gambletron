@@ -19,6 +19,19 @@ cp .env.example .env
 python quickstart.py
 ```
 
+### UI Backend (API)
+```bash
+python -m src.api.server
+```
+
+The UI expects the API at `http://localhost:8000/api`. Copy `config/.env.example` to `config/.env` and set Alpaca credentials for paper/live testing.
+
+Persistent storage defaults to SQLite at `./data/gambletron.db`. Override with:
+
+```
+GAMBLETRON_DATABASE_URL=postgresql://user:password@localhost/gambletron
+```
+
 ### Start Trading
 ```python
 from src.trading.agent import ForexTradingAgent

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/workspaces/gambletron/src/backtesting/validator.py", line 22, in <module>
+    class StrategyValidator:
+  File "/workspaces/gambletron/src/backtesting/validator.py", line 97, in StrategyValidator
+    ) -> Dict:
+         ^^^^
+NameError: name 'Dict' is not defined. Did you mean: 'dict'?

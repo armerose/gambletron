@@ -9,9 +9,14 @@ import RootLayout from './components/layout/RootLayout';
 // Pages
 import Dashboard from './pages/Dashboard';
 import Agents from './pages/Agents';
+import CreateAgent from './pages/CreateAgent';
+import AgentDetail from './pages/AgentDetail';
 import Monitor from './pages/Monitor';
 import Analytics from './pages/Analytics';
 import Logs from './pages/Logs';
+import Strategies from './pages/Strategies';
+import DataSources from './pages/DataSources';
+import Integrations from './pages/Integrations';
 import Settings from './pages/Settings';
 
 const queryClient = new QueryClient({
@@ -31,9 +36,14 @@ export default function App() {
             <Route element={<RootLayout />}>
               <Route path="/" element={<Dashboard />} />
               <Route path="/agents" element={<Agents />} />
+              <Route path="/agents/create" element={<CreateAgent />} />
+              <Route path="/agents/:id" element={<AgentDetail />} />
               <Route path="/monitor" element={<Monitor />} />
               <Route path="/analytics" element={<Analytics />} />
               <Route path="/logs" element={<Logs />} />
+              <Route path="/strategies" element={<Strategies />} />
+              <Route path="/data-sources" element={<DataSources />} />
+              <Route path="/integrations" element={<Integrations />} />
               <Route path="/settings" element={<Settings />} />
             </Route>
           </Routes>
